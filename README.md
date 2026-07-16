@@ -34,7 +34,7 @@ My work focuses on turning ambiguous client problems into deployable AI prototyp
 * **Stack**: React 19, TypeScript, Vite, AWS Bedrock (Claude Haiku 4.5), OpenSearch Serverless
 * **What it does**: A high-fidelity, interactive SaaS dashboard featuring secure login gateways, IRS Form 1040 Schedule C Part II Expense worksheets, and a conversational tax assistant (**Selvaraj**) with humanized task recommendation panels.
 * **Why it matters**: Demonstrates multi-tenant isolation, real-time telemetry audit logs, prefers-reduced-motion accessibility rules, and automated release validation checks (TS compiles, secret scans, FOSSA license checks).
-* **Status**: [Active Build / Release Candidate](https://github.com/samuelQUANSAH/Blindlabs.dev)
+* **Status**: [Active Build / Release Candidate](https://github.com/samuelQUANSAH/TaxIntel)
 
 ### 2. CareIntel Brief
 * **Type**: Multi-agent AI System / Healthcare Strategy RAG
