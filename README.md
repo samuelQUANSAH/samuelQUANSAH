@@ -29,35 +29,42 @@ My work focuses on turning ambiguous client problems into deployable AI prototyp
 
 ## 🌟 Featured AI Systems
 
-### 1. CareIntel Brief
+### 1. TaxIntel
+* **Type**: Multi-Tenant CPA Bookkeeping & Tax Automation SaaS
+* **Stack**: React 19, TypeScript, Vite, AWS Bedrock (Claude Haiku 4.5), OpenSearch Serverless
+* **What it does**: A high-fidelity, interactive SaaS dashboard featuring secure login gateways, IRS Form 1040 Schedule C Part II Expense worksheets, and a conversational tax assistant (**Selvaraj**) with humanized task recommendation panels.
+* **Why it matters**: Demonstrates multi-tenant isolation, real-time telemetry audit logs, prefers-reduced-motion accessibility rules, and automated release validation checks (TS compiles, secret scans, FOSSA license checks).
+* **Status**: [Active Build / Release Candidate](https://github.com/samuelQUANSAH/Blindlabs.dev)
+
+### 2. CareIntel Brief
 * **Type**: Multi-agent AI System / Healthcare Strategy RAG
 * **Stack**: Python, FastAPI, React, TypeScript, Vector DB, OpenTelemetry
 * **What it does**: A healthcare strategy briefing system that coordinates multiple specialized agents (retrieval, clinical evidence, regulatory) to generate comprehensive condition-level intelligence reports.
 * **Why it matters**: Automates the aggregation of medical studies, clinical trials, and competitor profiles, presenting executive summaries with interactive source citations.
 * **Status**: [Case Study & Research Prototype](https://github.com/samuelQUANSAH/careintel-brief-frontend)
 
-### 2. CHI Framework (Cognitive Hidden Intelligence)
+### 3. CHI Framework (Cognitive Hidden Intelligence)
 * **Type**: AI Observability & Reasoning System
 * **Stack**: Python, LangGraph, FastAPI, React, OpenTelemetry
 * **What it does**: A framework designed to make invisible agent reasoning traces visible through belief state tracking, logic layer steps, and structured debugging logs.
 * **Why it matters**: Bridges the trust gap between automated LLM decisions and human operators, offering clear visualization of decision history before actions execute.
 * **Status**: [Active Build / Developer Kit](https://github.com/samuelQUANSAH/agentic-rag-prototype)
 
-### 3. DeepStride AI
+### 4. DeepStride AI
 * **Type**: Embodied Agentic Web Platform
 * **Stack**: React, Vite, TypeScript, Tailwind CSS v4, Framer Motion, React Flow
 * **What it does**: A premium SpaceX-inspired interactive website showcasing agentic system execution, visual multi-agent architecture flows, and quantum-inspired AI research.
 * **Why it matters**: Translates complex system engineering diagrams into a high-fidelity client-ready demo portal with live logs simulation.
 * **Status**: [Client Portal Prototype](https://github.com/samuelQUANSAH/DeepstrideAi_Build101)
 
-### 4. RAG Token Guardrails
+### 5. RAG Token Guardrails
 * **Type**: Cost-Aware Context Controller
 * **Stack**: Python, Redis, FastAPI
 * **What it does**: A security and budget controller that monitors prompt size, caps top_k search expansion dynamically, caches repeated briefings, and routes intents to minimize API costs.
 * **Why it matters**: Prevents cost overrun loops in active multi-agent deployments by enforcing token budgets and triggering human approval gates for resource-heavy queries.
 * **Status**: [Active Build / Utility System](https://github.com/samuelQUANSAH/scaleopssolutions)
 
-### 5. AWS Agentic Operations Command Center
+### 6. AWS Agentic Operations Command Center
 * **Type**: AWS-Native Multi-Agent Orchestrator & Audit Dashboard
 * **Stack**: React, FastAPI, Python, AWS CDK, Step Functions, DynamoDB, S3, EventBridge
 * **What it does**: Ingests security and cost anomaly alerts via EventBridge, runs collaborative RAG and compliance checks in parallel, and suspends execution at a Human Gate awaiting operator signature.
