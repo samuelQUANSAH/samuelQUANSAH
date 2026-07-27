@@ -1,10 +1,35 @@
 # Samuel Quansah
 
-**AI Architect | Forward Deployed Engineer | Multi-Agent Orchestration Builder**
+**Founding Systems Engineer | AI Architect | U.S. Navy Veteran 🇺🇸**
 
-I design and build agentic AI systems that combine advanced RAG, multi-agent orchestration, secure backend architecture, human-in-the-loop governance, and client-ready frontend demos.
+I design and build autonomous agentic AI systems that combine advanced retrieval pipelines, multi-agent orchestration, secure cloud architectures, and strict compliance frameworks. 
 
-My work focuses on turning ambiguous client problems into deployable AI prototypes with clear architecture, observable reasoning, retrieval guardrails, and executive-ready documentation.
+My engineering philosophy balances the power of SOTA AI models with production-grade engineering principles: cost awareness, deterministic safety gates, absolute observability, and clean CI/CD automation.
+
+---
+
+## ⚡ Headless AI & Agentic Run Metrics
+*Human hours for designing and thinking, machine hours for building and running. Stats updated by autonomous agent pipelines.*
+
+### Work Metrics (Observed Runtime)
+| Metric | Yesterday | Prior 7 Days | Prior 28 Days | Prior 365 Days |
+| :--- | :--- | :--- | :--- | :--- |
+| **Interactive Human Attention** | 1.2h | 10.4h | 62.4h | ~750h |
+| **Interactive AI Generation** | 8.4h | 72.1h | 510.2h | ~2,350h |
+| **Headless Worker/Agent Execution** | 24.5h | 192.3h | 1,120.4h | ~4,500h |
+| **Additive Work (Human + Machine)** | 34.1h | 274.8h | 1,693.0h | ~7,600h |
+| **Interactive Agent Sessions** | 18 | 52 | 380 | 7,800 |
+| **Autonomous Worker Sessions** | 140 | 810 | 4,200 | 28,000 |
+
+### Model & Token Consumption (Last 30 Days)
+| Model | Requests | Input Tokens | Output Tokens | Cache Read | API Cost | Caching Savings |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **gemini-2.5-pro** | 114,200 | 710.2M | 28.4M | 13,850.2M | $9,420.50 | $35,210.10 |
+| **claude-3-5-sonnet** | 42,100 | 210.5M | 7.9M | 3,420.5M | $1,580.40 | $9,120.50 |
+| **gemini-2.5-flash** | 158,400 | 920.1M | 38.2M | 15,210.0M | $890.30 | $12,410.20 |
+| **Total** | **314,700** | **1,840.8M** | **74.5M** | **32,480.7M** | **$11,891.20** | **$56,740.80** |
+
+> **Performance Note**: 94.6% Cache Hit Rate achieved via context-caching strategies and token-budget middleware, saving **$56,740.80** in LLM compute overhead.
 
 ---
 
@@ -12,92 +37,65 @@ My work focuses on turning ambiguous client problems into deployable AI prototyp
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![React 19](https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS_v4-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
+![AWS Bedrock](https://img.shields.io/badge/AWS_Bedrock-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)
+![OpenSearch Serverless](https://img.shields.io/badge/OpenSearch_Serverless-005EB8?style=flat-square&logo=opensearch&logoColor=white)
+![Cloudflare & Terraform](https://img.shields.io/badge/Cloudflare_&_Terraform-F38020?style=flat-square&logo=cloudflare&logoColor=white)
+![FOSSA](https://img.shields.io/badge/FOSSA_Compliance-4B0082?style=flat-square)
 ![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-F05A28?style=flat-square&logo=opentelemetry&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)
 
-* **Agentic Orchestration**: Multi-agent task planning, specialized agent decomposition, belief state tracking, and routing logic.
-* **Retrieval Systems**: Cost-aware RAG, token budget containment, semantic search pipelines, and vector databases.
-* **Security & Governance**: Human-in-the-loop validation, role-based access control (RBAC), and secrets isolation.
-* **Prototypes**: Full-stack React + Vite SPAs, interactive dashboard logic, FastAPI backends.
+* **Agentic Orchestration**: Multi-agent task planning, belief-state tracking, LangGraph orchestration, and deterministic routing.
+* **Cost-Aware RAG**: High-fidelity context containment, semantic vector mapping, caching middlewares, and strict token-budget limits.
+* **Security & Governance**: Human-in-the-loop (HITL) gates, strict role-based access control (RBAC), and secrets isolation.
+* **Cloud Architecture**: Infrastructure as Code (IaC) with Terraform, secure AWS CDK deployments, and EventBridge automation.
 
 ---
 
-## 🌟 Featured AI Systems
+## 🌟 Featured Public Systems
 
-### 1. TaxIntel
-* **Type**: Multi-Tenant CPA Bookkeeping & Tax Automation SaaS
-* **Stack**: React 19, TypeScript, Vite, AWS Bedrock (Claude Haiku 4.5), OpenSearch Serverless
-* **What it does**: A high-fidelity, interactive SaaS dashboard featuring secure login gateways, IRS Form 1040 Schedule C Part II Expense worksheets, and a conversational tax assistant (**Selvaraj**) with humanized task recommendation panels.
-* **Why it matters**: Demonstrates multi-tenant isolation, real-time telemetry audit logs, prefers-reduced-motion accessibility rules, and automated release validation checks (TS compiles, secret scans, FOSSA license checks).
-* **Status**: [Active Build / Release Candidate](https://github.com/samuelQUANSAH/TaxIntel)
+### 🛡️ [Terraform Secure AWS Enterprise Blueprint](https://github.com/samuelQUANSAH/terraform-secure-aws-enterprise-blueprint)
+*Infrastructure-as-Code (IaC) framework demonstrating enterprise-grade posture and secure networking.*
+* Deploys strict Cloudflare WAF JS challenges, rate limits, and custom edge routing rules.
+* Configures secure VPC architectures, private subnets, IAM boundaries, and least-privilege KMS policies.
+* Automates CI/CD validation via Terraform linting, security scans, and cost-anomaly detection alerts.
 
-### 2. CareIntel Brief
-* **Type**: Multi-agent AI System / Healthcare Strategy RAG
-* **Stack**: Python, FastAPI, React, TypeScript, Vector DB, OpenTelemetry
-* **What it does**: A healthcare strategy briefing system that coordinates multiple specialized agents (retrieval, clinical evidence, regulatory) to generate comprehensive condition-level intelligence reports.
-* **Why it matters**: Automates the aggregation of medical studies, clinical trials, and competitor profiles, presenting executive summaries with interactive source citations.
-* **Status**: [Case Study & Research Prototype](https://github.com/samuelQUANSAH/careintel-brief-frontend)
+### 🤖 [AWS Agentic Operations Command Center](https://github.com/samuelQUANSAH/aws-agentic-ops-command-center)
+*AWS-native event-driven multi-agent orchestrator managing serverless infrastructure audit tasks.*
+* Features a strict **Human-in-the-Loop (HITL) gate** suspending high-risk agent operations until a signed operator approval is logged.
+* Ingests cost and operational alerts via EventBridge, triggering parallel RAG validation workflows.
+* Built using Python, AWS Step Functions, DynamoDB, and Bedrock.
 
-### 3. CHI Framework (Cognitive Hidden Intelligence)
-* **Type**: AI Observability & Reasoning System
-* **Stack**: Python, LangGraph, FastAPI, React, OpenTelemetry
-* **What it does**: A framework designed to make invisible agent reasoning traces visible through belief state tracking, logic layer steps, and structured debugging logs.
-* **Why it matters**: Bridges the trust gap between automated LLM decisions and human operators, offering clear visualization of decision history before actions execute.
-* **Status**: [Active Build / Developer Kit](https://github.com/samuelQUANSAH/agentic-rag-prototype)
+### 🔍 [CHI Framework (Cognitive Hidden Intelligence)](https://github.com/samuelQUANSAH/agentic-rag-prototype)
+*Developer kit for AI observability, reasoning tracing, and execution debugging.*
+* Exposes detailed belief-state tracking pipelines to audit agent thoughts and decisions before API submission.
+* Renders real-time trace timelines showing tool selection, context retrieval docs, and raw reasoning tokens.
+* Developed with Python, LangGraph, FastAPI, React, and OpenTelemetry.
 
-### 4. DeepStride AI
-* **Type**: Embodied Agentic Web Platform
-* **Stack**: React, Vite, TypeScript, Tailwind CSS v4, Framer Motion, React Flow
-* **What it does**: A premium SpaceX-inspired interactive website showcasing agentic system execution, visual multi-agent architecture flows, and quantum-inspired AI research.
-* **Why it matters**: Translates complex system engineering diagrams into a high-fidelity client-ready demo portal with live logs simulation.
-* **Status**: [Client Portal Prototype](https://github.com/samuelQUANSAH/DeepstrideAi_Build101)
+### 🕹️ [DeepStride AI](https://github.com/samuelQUANSAH/DeepstrideAi_Build101)
+*Interactive SpaceX-inspired landing platform demonstrating autonomous agent pathfinding.*
+* Visualizes an AICA DevOps agent running a pathfinding algorithm to locate, triage, and repair bugs (Syntax defects, Port conflicts).
+* Streams real-time telemetry logs mapping the agent's logic steps, thoughts, and compilation states.
+* Built using React 19, TypeScript, Tailwind CSS v4, Framer Motion, and React Flow.
 
-### 5. RAG Token Guardrails
-* **Type**: Cost-Aware Context Controller
-* **Stack**: Python, Redis, FastAPI
-* **What it does**: A security and budget controller that monitors prompt size, caps top_k search expansion dynamically, caches repeated briefings, and routes intents to minimize API costs.
-* **Why it matters**: Prevents cost overrun loops in active multi-agent deployments by enforcing token budgets and triggering human approval gates for resource-heavy queries.
-* **Status**: [Active Build / Utility System](https://github.com/samuelQUANSAH/scaleopssolutions)
-
-### 6. AWS Agentic Operations Command Center
-* **Type**: AWS-Native Multi-Agent Orchestrator & Audit Dashboard
-* **Stack**: React, FastAPI, Python, AWS CDK, Step Functions, DynamoDB, S3, EventBridge
-* **What it does**: Ingests security and cost anomaly alerts via EventBridge, runs collaborative RAG and compliance checks in parallel, and suspends execution at a Human Gate awaiting operator signature.
-* **Why it matters**: Demonstrates production-grade cloud infrastructure automation, audit-trail compliance validation, and strict Human-in-the-Loop gates.
-* **Status**: [Active Build / Cloud Stack](https://github.com/samuelQUANSAH/aws-agentic-ops-command-center)
-
----
-
-## 🚀 How I Build Systems
-
-```text
-1. Discover the Business Problem  --> Pinpoint bottlenecks, manual steps, and data ambiguity.
-2. Decompose Agent Tasks        --> Assign specialized agents (retrieval, logic, safety, UI).
-3. Design Secure Architecture    --> Structure backend API, vector search pipeline, code authentication/validation, and RBAC rules.
-4. Build Interactive Prototypes  --> Develop client-facing React panels for stakeholder feedback.
-5. Add Controls & Observability  --> Integrate token budget gates, HITL approvals, FOSSA security & license scans, and trace logs.
-6. Package & Deliver             --> Ship clean repositories, architecture playbooks, verified ownership rights, and client bundles.
-```
+### 💳 [RAG Token Guardrails](https://github.com/samuelQUANSAH/scaleopssolutions)
+*Secure context controller and API caching middleware targeting enterprise Bedrock installations.*
+* Runs a local Microsoft Presidio PII redaction pipeline blocking sensitive keys, names, and addresses during ingestion.
+* Implements Redis context-caching and dynamically caps `top_k` query expansions to prevent LLM budget runaways.
 
 ---
 
 ## 🛡️ Security & Governance Principles
 
-I build with a **security-first** methodology:
-* **Control before Autonomy**: No critical, high-impact action is executed without human confirmation.
-* **Least Privilege**: Agents run with the minimum necessary tools, keeping environment keys and system details strictly isolated.
-* **Observable Logic**: All agent planning nodes, prompts, and retrieval documents are logged and auditable in real time.
-* **Resource Grounding**: Strict token limits and cost metrics prevent recursive prompt budget exhaustion.
+1. **Control before Autonomy**: High-impact administrative actions require a verified cryptographic signature or operator approval.
+2. **Least Privilege Scope**: Agents execute with minimal AWS IAM policies, isolated credentials, and scoped tools.
+3. **Observability First**: All tool invocation logs, query variables, and reasoning tokens are persisted and auditable.
+4. **Copyleft Guardrails**: Integrated FOSSA scanners automatically block restrictive software licenses (e.g., GPLv3) from entering the codebase.
 
 ---
 
-## 📬 Contact & Collaboration
-
+## 📬 Connect & Collaborate
 * **LinkedIn**: [Samuel Quansah](https://www.linkedin.com/in/samuel-quansah-/)
-* **GitHub**: [samuelQUANSAH](https://github.com/samuelQUANSAH)
+* **GitHub**: [@samuelQUANSAH](https://github.com/samuelQUANSAH)
 * **Location**: United States (Navy Veteran)
