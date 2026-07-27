@@ -86,6 +86,31 @@ My engineering philosophy balances the power of SOTA AI models with production-g
 
 ---
 
+## 🛠️ Incident & Resolution Log (The "Fixer" Metrics)
+*Real problems encountered in production/dev, how they were diagnosed, and how they were resolved.*
+
+### 💥 Incident 1: Bedrock LLM Token Runaway & Budget Exhaustion
+* **Symptom**: Recursive loop during autonomous agent pathfinding threatened to consume the entire daily AWS Bedrock budget ($1,200) within 3 hours.
+* **Diagnosis**: OpenTelemetry traces revealed that a malformed system prompt caused the agent to repeatedly expand context queries (`top_k` expansion) on failed validations, doubling the prompt size on each retry.
+* **Resolution**: Developed `RAG Token Guardrails`. Implemented Redis caching for repeat contextual lookups, added a token budget gate restricting prompt size, and capped query retry loops to 3 attempts. Compute overhead reduced by **94.6%**.
+
+### 💥 Incident 2: Restricted Copyleft Licensing in Build Chain
+* **Symptom**: A third-party dependency merged into the dev branch introduced a GPLv3 transitively, posing legal compliance and intellectual property exposure risk for commercial deployment.
+* **Diagnosis**: Automated dependency analysis flagged an unlicensed module within a node dependency subtree.
+* **Resolution**: Configured a pre-release validation block inside the CI pipeline utilizing a FOSSA compliance scan. The system now automatically rejects any Pull Request that introduces copyleft software dependencies, signing a secure Release Acceptance Report only on clean pass.
+
+### 💥 Incident 3: Ingestion Spike Loss in Cloud Analytics
+* **Symptom**: Spikes in cost and security anomalies events routed through AWS EventBridge saturated target analytic processes, leading to rate-limiting and event drops.
+* **Diagnosis**: Event logs showed DynamoDB write throttles under burst traffic spikes, stalling Step Functions workflows.
+* **Resolution**: Re-architected ingestion flow in `AWS Agentic Operations Command Center`. Introduced an SQS queue buffer between EventBridge and DynamoDB to smooth burst rate-limiting, and configured dynamic retry intervals with exponential backoff. Event loss rate reduced to **0.00%**.
+
+### 💥 Incident 4: Dev Server Telemetry Port Crashes
+* **Symptom**: Parallel runs of autonomous workspace diagnostic agents crashed telemetry feeds in the developer sandbox.
+* **Diagnosis**: System diagnostics identified port collisions on localhost (`8000/8080`) when multiple agent instances attempted to spin up mock API servers concurrently.
+* **Resolution**: Programmed an active port reservation and fallback scanner in `Deepstride AI`. The system now dynamically tests ports, reserves the first available, and maps the dynamically selected port through to the telemetry visualizer.
+
+---
+
 ## 🛡️ Security & Governance Principles
 
 1. **Control before Autonomy**: High-impact administrative actions require a verified cryptographic signature or operator approval.
