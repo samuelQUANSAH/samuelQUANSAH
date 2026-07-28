@@ -1,6 +1,6 @@
 # Samuel Quansah
 
-**Founding Systems Engineer | AI Architect | U.S. Navy Veteran 🇺🇸**
+**Founding Systems Engineer | AI Architect | **
 
 I design and build autonomous agentic AI systems that combine advanced retrieval pipelines, multi-agent orchestration, secure cloud architectures, and strict compliance frameworks. 
 
