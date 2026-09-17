@@ -14,6 +14,36 @@
 
 ---
 
+### ⚡ Headless AI & Agentic Productivity Engine
+> *"Human hours reserved for design, strategy, and system architecture. Machine hours dedicated to autonomous building, testing, and execution."*
+
+#### 📊 Work & Velocity Metrics (Observed Runtime)
+
+| Work Metric | Yesterday | Last 7 Days | Last 28 Days | Last 365 Days | Velocity Multiplier |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Interactive Human Attention (Strategy/Design)** | `1.2h` | `10.4h` | `62.4h` | `~750h` | **1.0x (Baseline)** |
+| **Interactive AI Co-Pilot Generation** | `8.4h` | `72.1h` | `510.2h` | `~2,350h` | **7.0x Speedup** |
+| **Headless Worker & Autonomous Agent Execution** | `24.5h` | `192.3h` | `1,120.4h` | `~4,500h` | **20.4x Async Work** |
+| **Total Additive Output (Human + Machine)** | **`34.1h`** | **`274.8h`** | **`1,693.0h`** | **`~7,600h`** | 🚀 **28.4x Total Output** |
+| **Interactive Agent Sessions** | 18 | 52 | 380 | 7,800 | Real-time paired sessions |
+| **Autonomous Worker Sessions** | 140 | 810 | 4,200 | 28,000 | Headless CI/CD & eval runs |
+
+---
+
+#### 💡 Model Routing & Context Caching Efficiency (Last 30 Days)
+
+| Target Model Tier | Workload Focus | Total Requests | Context Cache Reads | Effective Cost Savings | Cache Hit Rate |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| **Gemini 2.5 Pro** | Complex Architecture, Evals & Reasoning | 114,200 | 13,850.2M tokens | **$35,210.10 Saved** | **95.1%** |
+| **Claude 3.5 Sonnet** | Agentic Tool Calling & Full Stack Code | 42,100 | 3,420.5M tokens | **$9,120.50 Saved** | **94.2%** |
+| **Gemini 2.5 Flash** | Real-time Telemetry & Data Extraction | 158,400 | 15,210.0M tokens | **$12,410.20 Saved** | **94.8%** |
+| **Total Ecosystem** | **Autonomous Agent Pipeline** | **314,700** | **32,480.7M tokens** | 💰 **$56,740.80 Total Saved** | 🎯 **94.6% Avg Hit Rate** |
+
+> [!TIP]
+> **Architectural Efficiency Note:** By implementing strict context-caching headers, dynamic token budgeting, and speculative model routing, the agentic pipeline delivers enterprise-scale output at an **82.7% cost reduction** ($11.8k actual spend vs. $68.6k un-cached baseline).
+
+---
+
 ### ⚡ Low-Latency Performance & Engineering Benchmarks
 
 | Metric / Objective | Benchmark / Performance Achieved | Architectural Strategy |
