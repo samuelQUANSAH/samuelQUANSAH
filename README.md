@@ -30,25 +30,26 @@
 
 ---
 
-### `// THE_CLOSED_LOOP`
+### `// THE_CLOSED_LOOP (30-DAY EXECUTIVE DELIVERY ROADMAP)`
 
 ```gdb
   +-------------------------------------------------------------------------+
-  |                             SAMUEL QUANSAH                              |
-  |                AI AGENT INFRASTRUCTURE & CONTROL PLANE                  |
+  |                 SAMUEL QUANSAH • 30-DAY SYSTEM DELIVERY LOOP            |
+  |                FOUNDING ENGINEER & AI ARCHITECT ROADMAP                 |
   +-------------------------------------------------------------------------+
                                        |
   +------------------+       +------------------+       +------------------+
-  |  ORCHESTRATE /01 | ----> |    GOVERN /02    | ----> |   OBSERVE /03    |
-  | AWS Agentic Ops  |       | RAG Token Guard  |       |  CHI Framework   |
-  +------------------+       +------------------+       +------------------+
-           |                          |                          |
-           v                          v                          v
-  +------------------+       +------------------+       +------------------+
-  |    DEVOPS /04    | ----> |    SECURE /05    | ----> |   PATHFIND /06   |
-  | Terraform AWS    |       | Presidio PII WAF |       |  DeepStride AI   |
+  | DAYS 01-05 (AUDIT)| ---->| DAYS 06-15 (BUILD)| ---->| DAYS 16-30 (SCALE)|
+  | Security, Token  |       | Multi-Agent Orchestration| IaC Terraform AWS|
+  | & Compliance Gate|       | & CHI Observability |   | Enterprise Launch|
   +------------------+       +------------------+       +------------------+
 ```
+
+| Delivery Window | Tactical Focus | Concrete Output / Deliverables |
+| :--- | :--- | :--- |
+| **DAYS 01 - 05: AUDIT & GOVERN** | Security posture, token cost containment, & IP licensing | • **RAG Token Guardrails** (`scaleopssolutions`): Redis semantic caching & PII redaction<br>• **CI/CD Security Gates**: FOSSA copyleft scans blocking non-compliant PRs |
+| **DAYS 06 - 15: ORCHESTRATE & OBSERVE** | Multi-agent pipeline automation & reasoning observability | • **AWS Agentic Command Center**: Step Functions & HITL operator approval gates<br>• **CHI Framework** (`agentic-rag-prototype`): LangGraph belief-state & trace logging |
+| **DAYS 16 - 30: SCALE & DEPLOY** | Production IaC automation, event queueing, & agent telemetry | • **Terraform AWS Enterprise Blueprint**: Zero-trust VPC & Cloudflare WAF posture<br>• **DeepStride AI**: A* pathfinding agent visualization & active port fallback |
 
 ---
 
