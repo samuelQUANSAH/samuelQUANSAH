@@ -122,6 +122,27 @@
 
 ---
 
+### `// GITHUB_STATS_&_ACTIVITY`
+
+<div align="center">
+
+<a href="https://github.com/samuelQUANSAH">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=samuelQUANSAH&show_icons=true&theme=dark&bg_color=050a12&border_color=00e7ff&title_color=00cce3&icon_color=ff3d9a&text_color=c9d1d9&include_all_commits=true&count_private=true" alt="Samuel Quansah's GitHub Stats" />
+</a>
+<a href="https://github.com/samuelQUANSAH">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=samuelQUANSAH&layout=compact&theme=dark&bg_color=050a12&border_color=00e7ff&title_color=00cce3&text_color=c9d1d9" alt="Top Languages" />
+</a>
+
+<br><br>
+
+<a href="https://github.com/samuelQUANSAH">
+  <img width="98%" src="https://github-readme-streak-stats.herokuapp.com/?user=samuelQUANSAH&theme=dark&background=050a12&border=00e7ff&stroke=00cce3&ring=ff3d9a&fire=ff9900&currStreakNum=c9d1d9&sideNums=c9d1d9&sideTitle=00cce3" alt="GitHub Contribution Streak" />
+</a>
+
+</div>
+
+---
+
 ### `// INCIDENT_RESPONSE_LOG`
 
 | Incident | Root Cause / Diagnosis | Programmatic Resolution | Business Impact |
