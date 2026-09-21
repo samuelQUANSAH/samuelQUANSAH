@@ -8,6 +8,11 @@
 [![FastAPI](https://img.shields.io/badge/FASTAPI-050a12?style=for-the-badge&logo=fastapi&logoColor=009688)](https://fastapi.tiangolo.com/)
 [![LangGraph](https://img.shields.io/badge/LANGGRAPH-050a12?style=for-the-badge&logo=langchain&logoColor=00e7ff)](https://langchain-ai.github.io/langgraph/)
 [![Terraform](https://img.shields.io/badge/TERRAFORM-050a12?style=for-the-badge&logo=terraform&logoColor=844fba)](https://www.terraform.io/)
+[![Docker](https://img.shields.io/badge/DOCKER-050a12?style=for-the-badge&logo=docker&logoColor=2496ed)](https://www.docker.com/)
+[![PostgreSQL](https://img.shields.io/badge/POSTGRESQL-050a12?style=for-the-badge&logo=postgresql&logoColor=4169e1)](https://www.postgresql.org/)
+[![Redis](https://img.shields.io/badge/REDIS-050a12?style=for-the-badge&logo=redis&logoColor=dc382d)](https://redis.io/)
+[![OpenTelemetry](https://img.shields.io/badge/OPENTELEMETRY-050a12?style=for-the-badge&logo=opentelemetry&logoColor=f05a28)](https://opentelemetry.io/)
+[![TypeScript](https://img.shields.io/badge/TYPESCRIPT-050a12?style=for-the-badge&logo=typescript&logoColor=3178c6)](https://www.typescriptlang.org/)
 [![Security+](https://img.shields.io/badge/CYBERSECURITY-050a12?style=for-the-badge&logo=shield&logoColor=ff3d9a)](https://www.linkedin.com/in/samuel-quansah)
 
 <br>
