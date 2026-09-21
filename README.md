@@ -137,7 +137,7 @@
 * **M.S. Computer Information Systems** — California Miramar University *(Expected Dec 2026)* | GPA 3.87
 * **M.S. Cybersecurity Technology** — University of Maryland Global Campus *(Oct 2024)* | GPA 4.00
 * **B.S. Geomatics Engineering** — KNUST *(Jun 2015)*
-* **U.S. Navy Veteran** 🇺🇸 | **Secret Security Clearance**
+* **U.S. Navy Veteran** 🇺🇸
 * **AWS Certified Data Engineer Associate** | **AWS Certified CloudOps Engineer Associate**
 * **CompTIA Security+ CE** | **CompTIA Cloud+** | **Professional Scrum Master I**
 
