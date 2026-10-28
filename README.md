@@ -53,6 +53,13 @@
 
 ---
 
+
+### `// INTERACTIVE_PROJECTS`
+
+- **Signal Sprint**: [Play the live multiplayer word game](https://signal-sprint.richeft10.chatgpt.site) · [View source and rules](projects/signal-sprint/README.md)
+
+---
+
 ### `// FLAGSHIP_SYSTEMS`
 
 <table>
