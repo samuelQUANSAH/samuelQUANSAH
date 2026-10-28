@@ -4,6 +4,8 @@ A live, turn-based multiplayer word game for 2–6 people playing on separate de
 
 **Play:** https://signal-sprint.richeft10.chatgpt.site
 
+![Think Fast! game cover](cover.jpg)
+
 ## Rules
 
 1. The host creates a room and shares the invite link or six-character room code.
