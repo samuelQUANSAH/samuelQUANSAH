@@ -14,8 +14,8 @@ const CATEGORIES = [
 ];
 const LETTERS = "ABCDEFGHJKLMNPRSTW";
 const ROOM_TTL_MS = 3 * 60 * 60 * 1000;
-const TURN_MS = 60 * 1000;
-const WIN_SCORE = 5;
+const TURN_MS = 10 * 1000;
+const TOTAL_ROUNDS = 5;
 const ROOM_SCHEMA = `CREATE TABLE IF NOT EXISTS game_rooms (
   room_code TEXT PRIMARY KEY,
   payload TEXT NOT NULL,
@@ -94,6 +94,7 @@ async function createRoom(request, db) {
       usedWords: [],
       winner: "",
       winnerToken: "",
+      winners: [],
       deadline: 0,
     };
     try {
@@ -145,7 +146,10 @@ async function startGame(request, db, roomCode) {
     if (room.hostToken !== token) return { error: "Only the host can start the game.", status: 403 };
     if (room.players.length < 2) return { error: "Invite at least one friend before starting." };
     if (room.status === "playing") return { error: "The game is already in progress." };
-    if (room.status === "finished") room.players.forEach((player) => { player.score = 0; });
+    if (room.status === "finished") {
+      room.players.forEach((player) => { player.score = 0; });
+      room.round = 0;
+    }
     room.status = "playing";
     room.round = (room.round || 0) + 1;
     room.category = CATEGORIES[Math.floor(Math.random() * CATEGORIES.length)];
@@ -156,6 +160,7 @@ async function startGame(request, db, roomCode) {
     room.usedWords = [];
     room.winner = "";
     room.winnerToken = "";
+    room.winners = [];
     room.deadline = Date.now() + TURN_MS;
     return {};
   });
@@ -181,16 +186,7 @@ async function submitWord(request, db, roomCode) {
     room.usedWords.push(word);
     room.lastWord = word;
     room.lastName = player.name;
-    if (player.score >= WIN_SCORE) {
-      room.status = "finished";
-      room.winner = player.name;
-      room.winnerToken = token;
-      room.deadline = 0;
-    } else {
-      const index = room.players.findIndex((entry) => entry.token === token);
-      room.currentToken = room.players[(index + 1) % room.players.length].token;
-      room.deadline = Date.now() + TURN_MS;
-    }
+    advanceTurn(room, token);
     return {};
   });
   if (result.error) return json({ error: result.error }, result.status || 400);
@@ -200,13 +196,36 @@ async function submitWord(request, db, roomCode) {
 async function advanceTimedOutPlayer(db, roomCode) {
   await mutateRoom(db, roomCode, (room) => {
     if (room.status !== "playing" || room.deadline > Date.now()) return { error: "No timeout to process." };
-    const index = room.players.findIndex((player) => player.token === room.currentToken);
-    room.currentToken = room.players[(index + 1) % room.players.length]?.token || "";
-    room.deadline = Date.now() + TURN_MS;
+    const timedOutToken = room.currentToken;
+    advanceTurn(room, timedOutToken);
     room.lastWord = "";
     room.lastName = "Time ran out; turn passed.";
     return {};
   });
+}
+
+function advanceTurn(room, playerToken) {
+  const index = room.players.findIndex((player) => player.token === playerToken);
+  if (index < room.players.length - 1) {
+    room.currentToken = room.players[index + 1].token;
+    room.deadline = Date.now() + TURN_MS;
+    return;
+  }
+  if (room.round >= TOTAL_ROUNDS) {
+    const highScore = Math.max(...room.players.map((player) => player.score));
+    room.winners = room.players.filter((player) => player.score === highScore).map((player) => player.token);
+    room.winner = room.players.filter((player) => player.score === highScore).map((player) => player.name).join(", ");
+    room.winnerToken = room.winners.length === 1 ? room.winners[0] : "";
+    room.status = "finished";
+    room.deadline = 0;
+    return;
+  }
+  room.round += 1;
+  room.category = CATEGORIES[Math.floor(Math.random() * CATEGORIES.length)];
+  room.letter = LETTERS[Math.floor(Math.random() * LETTERS.length)];
+  room.usedWords = [];
+  room.currentToken = room.players[0].token;
+  room.deadline = Date.now() + TURN_MS;
 }
 
 async function mutateRoom(db, roomCode, mutate) {
@@ -234,7 +253,10 @@ async function loadRoom(db, roomCode) {
 
 function publicState(room, token) {
   const currentPlayer = room.players.find((player) => player.token === room.currentToken);
-  const winner = room.players.find((player) => player.token === room.winnerToken);
+  const winnerTokens = Array.isArray(room.winners) && room.winners.length
+    ? room.winners
+    : room.winnerToken ? [room.winnerToken] : [];
+  const winners = room.players.filter((player) => winnerTokens.includes(player.token));
   return {
     roomCode: room.roomCode,
     status: room.status,
@@ -254,7 +276,9 @@ function publicState(room, token) {
     lastWord: room.lastWord,
     lastName: room.lastName,
     winner: room.winner,
-    winnerScore: winner?.score || 0,
+    winnerScore: winners[0]?.score || 0,
+    winners: winners.map((player) => player.name),
+    isWinner: winners.some((player) => player.token === token),
     deadline: room.deadline,
   };
 }
