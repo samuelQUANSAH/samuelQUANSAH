@@ -1,4 +1,4 @@
-# Signal Sprint
+# Think Fast!
 
 A live, turn-based multiplayer word game for 2–6 people playing on separate devices.
 
